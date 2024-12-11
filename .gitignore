@@ -1,0 +1,4 @@
+__pycache__
+.env
+kb.py
+text.py
