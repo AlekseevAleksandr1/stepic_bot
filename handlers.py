@@ -66,5 +66,8 @@ async def remove_eat(msg: Message,state: FSMContext):
     finally:
         await state.set_state(FSMFillForm.choice_eat)
 
+@router.message(Command(commands='app'))
+async def app_dp(msg: Message):
+        await msg.answer(text='app')
 
 
